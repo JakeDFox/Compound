@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+        <array key="OstrichSans-Medium.otf">
+            <string>OstrichSans-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Compound" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-67-MgI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CompoundBackground" translatesAutoresizingMaskIntoConstraints="NO" id="s0X-V9-giV">
+                                        <rect key="frame" x="0.0" y="-3" width="375" height="670"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-pd-EEv">
+                                        <rect key="frame" x="8" y="20" width="359" height="627"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ghq-V3-9bM">
+                                                <rect key="frame" x="105.5" y="0.0" width="148" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.99215686274509807" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="redraw" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="center" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1i1-y1-Ymw" userLabel="Initial Balance">
+                                                <rect key="frame" x="30" y="26" width="299" height="57.5"/>
+                                                <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="OstrichSans-Medium" family="Ostrich Sans" pointSize="68"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yearly Contributions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuP-mH-A5F">
+                                                <rect key="frame" x="89.5" y="85.5" width="180" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="redraw" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" textAlignment="center" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FQL-ja-ZHQ" userLabel="Payments">
+                                                <rect key="frame" x="30" y="111.5" width="299" height="57.5"/>
+                                                <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="OstrichSans-Medium" family="Ostrich Sans" pointSize="68"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps4-oo-Or3">
+                                                <rect key="frame" x="155" y="171" width="49" height="24"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.99194461109999998" green="0.99615627529999995" blue="0.99600595240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="redraw" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="20" textAlignment="center" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Ep-o2-PW6" userLabel="Payments">
+                                                <rect key="frame" x="60" y="197" width="239" height="58"/>
+                                                <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="OstrichSans-Medium" family="Ostrich Sans" pointSize="68"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibz-dg-YGV">
+                                                <rect key="frame" x="122.5" y="257" width="114" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.99194461109999998" green="0.99615627529999995" blue="0.99600595240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qlB-tA-5dX">
+                                                <rect key="frame" x="116" y="282.5" width="127" height="29.5"/>
+                                                <segments>
+                                                    <segment title="Monthly"/>
+                                                    <segment title="Yearly"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.99215686274509807" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="multiplierChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ewk-50-JxA"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <pickerView verifyAmbiguity="off" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="V4Z-5a-AIZ">
+                                                <rect key="frame" x="19.5" y="313" width="320" height="219"/>
+                                            </pickerView>
+                                            <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-45-xXx">
+                                                <rect key="frame" x="79" y="534" width="201" height="36.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Calculate Future Value">
+                                                    <color key="titleColor" red="0.38426861166954041" green="0.38433963060379028" blue="0.38426411151885986" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5M-9o-1QY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="24" adjustsLetterSpacingToFitWidth="YES" enabled="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Qu-xI-8Cs" userLabel="Result">
+                                                <rect key="frame" x="8" y="572.5" width="343" height="54.5"/>
+                                                <fontDescription key="fontDescription" name="OstrichSans-Medium" family="Ostrich Sans" pointSize="64"/>
+                                                <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="highlightedColor" red="0.90772736072540283" green="0.98529988527297974" blue="0.94829267263412476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6Ep-o2-PW6" firstAttribute="leading" secondItem="Cp6-pd-EEv" secondAttribute="leading" constant="60" id="0hm-q8-9KG"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Ep-o2-PW6" secondAttribute="trailing" constant="60" id="9cT-aI-T8k"/>
+                                            <constraint firstItem="FQL-ja-ZHQ" firstAttribute="top" secondItem="vuP-mH-A5F" secondAttribute="bottom" constant="3" id="MKg-vS-a39"/>
+                                            <constraint firstItem="1i1-y1-Ymw" firstAttribute="leading" secondItem="Cp6-pd-EEv" secondAttribute="leading" constant="30" id="NbY-Aa-A2F"/>
+                                            <constraint firstItem="1i1-y1-Ymw" firstAttribute="top" secondItem="ghq-V3-9bM" secondAttribute="bottom" constant="3" id="Ruk-2w-o6d"/>
+                                            <constraint firstAttribute="trailing" secondItem="FQL-ja-ZHQ" secondAttribute="trailing" constant="30" id="TJa-7h-v8q"/>
+                                            <constraint firstItem="8Qu-xI-8Cs" firstAttribute="top" secondItem="hdA-45-xXx" secondAttribute="bottom" constant="3" id="Wdt-gJ-REn"/>
+                                            <constraint firstItem="FQL-ja-ZHQ" firstAttribute="leading" secondItem="Cp6-pd-EEv" secondAttribute="leading" constant="30" id="ZbS-IT-h4h"/>
+                                            <constraint firstItem="8Qu-xI-8Cs" firstAttribute="leading" secondItem="Cp6-pd-EEv" secondAttribute="leading" constant="8" id="jox-Sa-feU"/>
+                                            <constraint firstItem="6Ep-o2-PW6" firstAttribute="top" secondItem="ps4-oo-Or3" secondAttribute="bottom" constant="3" id="pQS-hQ-oGS"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Qu-xI-8Cs" secondAttribute="trailing" constant="8" id="pee-Zz-v5S"/>
+                                            <constraint firstAttribute="trailing" secondItem="1i1-y1-Ymw" secondAttribute="trailing" constant="30" id="yQk-OB-dL6"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.004060815554112196" green="0.72496205568313599" blue="0.9913669228553772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="s0X-V9-giV" secondAttribute="bottom" id="2qL-aq-rDR"/>
+                                    <constraint firstItem="s0X-V9-giV" firstAttribute="leading" secondItem="QSe-67-MgI" secondAttribute="leading" id="CBa-U5-sFq"/>
+                                    <constraint firstItem="s0X-V9-giV" firstAttribute="centerY" secondItem="QSe-67-MgI" secondAttribute="centerY" multiplier="1.54" constant="1" id="Epi-Xi-RgH"/>
+                                    <constraint firstAttribute="trailing" secondItem="s0X-V9-giV" secondAttribute="trailing" id="HQD-gt-bZb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cp6-pd-EEv" secondAttribute="bottom" constant="20" id="bdt-uK-Hsy"/>
+                                    <constraint firstItem="Cp6-pd-EEv" firstAttribute="leading" secondItem="QSe-67-MgI" secondAttribute="leading" constant="8" id="d5X-Ti-tKV"/>
+                                    <constraint firstItem="Cp6-pd-EEv" firstAttribute="top" secondItem="QSe-67-MgI" secondAttribute="top" constant="20" id="u8V-J8-4ze"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cp6-pd-EEv" secondAttribute="trailing" constant="8" id="wMV-gL-aqr"/>
+                                    <constraint firstItem="s0X-V9-giV" firstAttribute="top" secondItem="QSe-67-MgI" secondAttribute="top" constant="-3" id="wru-Uf-VuN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QSe-67-MgI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cf4-81-6P5"/>
+                            <constraint firstItem="QSe-67-MgI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R1r-UI-v9l"/>
+                            <constraint firstItem="QSe-67-MgI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Yfi-jp-9z9"/>
+                            <constraint firstItem="QSe-67-MgI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="se2-QB-zFf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="InitialBalance" destination="1i1-y1-Ymw" id="B0S-Rw-b95"/>
+                        <outlet property="Payments" destination="FQL-ja-ZHQ" id="BPM-eq-CYp"/>
+                        <outlet property="PercentPicker" destination="V4Z-5a-AIZ" id="wnd-52-8Zn"/>
+                        <outlet property="Result" destination="8Qu-xI-8Cs" id="hsF-hF-HFy"/>
+                        <outlet property="Years" destination="6Ep-o2-PW6" id="5uy-IT-ZZr"/>
+                        <outlet property="monthlyYearly" destination="qlB-tA-5dX" id="EYs-ct-ona"/>
+                        <outlet property="percentPicker" destination="V4Z-5a-AIZ" id="GEu-wU-dsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CompoundBackground" width="1536" height="2048"/>
+    </resources>
+</document>
