@@ -26,7 +26,14 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
             updatePercent()
     }
     
+    func calculateWithPercent() {
+        result = initialbalance * pow((1 + percentDouble / multiplier), (multiplier * years)) + payments * (pow((1 + percentDouble / multiplier), (multiplier * years)) - 1) * (multiplier / percentDouble)
+        
+    }
     
+    func calculateWithoutPercent() {
+        result = initialbalance + payments * years
+    }
     
     var digitone = ""
     var digittwo = "0"
@@ -82,11 +89,12 @@ class ViewController: UIViewController,  UIPickerViewDelegate, UIPickerViewDataS
         payments = Double(Payments.text!)!
         years = Double(Years.text!)!
         percentDouble = Double(percent)!
+        
+                    calculateWithPercent()
                 
-        result = initialbalance * pow((1 + percentDouble / multiplier), (multiplier * years)) + payments * (pow((1 + percentDouble / multiplier), (multiplier * years)) - 1) * (multiplier / percentDouble)
-                }
+            }
                 else {
-                    result = initialbalance + payments * years
+                    calculateWithoutPercent()
                 }
         let formatter = NumberFormatter()
                 formatter.locale = Locale.current

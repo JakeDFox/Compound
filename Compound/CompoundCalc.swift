@@ -111,4 +111,20 @@ class CompoundCalc {
 
     }
     
+    init (digitone: String, digittwo: String, digitthree: String, digitfour: String, digitfive: String, digitsix: String, percent: String, result: Double, percentDouble: Double, multiplier: Double, initialbalance: Double, years: Double, payments: Double) {
+        self._digitone = digitone
+        self._digittwo = digittwo
+        self._digitthree = digitthree
+        self._digitfour = digitfour
+        self._digitfive = digitfive
+        self._digitsix = digitsix
+        self._percent = percent
+        self._result = result
+        self._percentDouble = percentDouble
+        self._multiplier = multiplier
+        self._initialbalance = initialbalance
+        self._years = years
+        self._payments = payments
+        
+    }
 }
